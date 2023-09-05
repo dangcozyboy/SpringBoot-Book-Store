@@ -1,0 +1,29 @@
+Mã hàng	8936037711676
+Tên Nhà Cung Cấp	Thái Hà
+Tác giả	Yoshitaka Kitao
+Người Dịch	Nguyễn Thị Thảo
+NXB	NXB Công thương
+Năm XB	2018
+Trọng lượng (gr)	250
+Kích Thước Bao Bì	15.5 x 24 x 1.2
+Số trang	237
+Hình thức	Bìa Mềm
+
+
+Thế giới đang đứng trước một cơ hội lớn có thể gọi là cuộc Cách mạng công nghiệp lần thứ tư. Đây không chỉ đơn thuần là sự đổi mới về mặt kỹ thuật, mà là sự thay đổi lớn về công nghệ ở mức độ có thể tạo ra một cuộc cách mạng thay đổi cơ bản cấu trúc của xã hội hiện tại. Một trong những đại diện của nó là cuộc cách mạng trong nền công nghiệp Tài chính – FinTech. Có thể coi những công ty FinTech đang đảm nhận vai trò này là những “công ty công nghệ chuyên xử lý dữ liệu lớn liên quan đến tiền.”
+
+Hơi vòng vo một chút, tại Diễn đàn Davos năm 2016 đã diễn ra một cuộc thảo luận khá thú vị. Đó là trả lời câu hỏi “Bạn nghĩ rằng thế giới hiện đang chiến tranh hay hòa bình?” Câu hỏi mới nghe tưởng chừng đơn giản nhưng lại rất khó trả lời.  Theo khái niệm trước đây, chiến tranh được định nghĩa là khi “có sự di chuyển của hệ thống quân đội”. Nhưng ngày nay với công nghệ mới phát triển, không cần phải di chuyển hệ thống quân đội cũng có thể tấn công đối thủ. Đó là chiến tranh dưới hình thức khủng bố và tấn công mạng.
+
+Trên thực tế, những vấn đề tương tự đang xảy ra ở mọi khía cạnh của nền kinh tế. Nói một cách khái quát, trong cuộc cách mạng công nghiệp lần thứ tư này, các hệ thống và cơ sở hạ tầng xã hội khác nhau mà chúng ta xây dựng từ trước đến nay có thể sẽ trở nên không còn cần thiết nữa.
+
+“Fintech 4.0 – những điển hình thành công trong cuộc cách mạng công nghệ tài chính” cuốn sách này được tác giả Kitao Yoshitaka viết với mục đích không giống như sách nhập môn thường thấy của các học giả hay chuyên gia tài chính, mà tác giả muốn nó hướng tới những nhà lãnh đạo doanh nghiệp đang ngày đêm chiến đấu để tạo ra cuộc cách mạng FinTech (“financial technology”, có nghĩa là “công nghệ trong tài chính).
+
+Ông coi họ là những chiến binh của cuộc cách mạng này. Mỗi chiến binh (nhà lãnh đạo doanh nghiệp) đó có ước mơ (mục tiêu) gì, họ hiện thực hóa chúng bằng phương pháp và phương tiện (kỹ thuật) nào, tác giả sẽ viết về những điều đó chân thực như nó vốn có. Và mặc dù là người biên soạn, Kitao Yoshitaka hoàn toàn không yêu sách hay nhũn nhặn với bất cứ ai trong số họ.
+
+Minh chứng đầu tiên đã được công bố vào ngày 2 tháng 3 năm 2017, và nó nhanh chóng trở thành tin tức hàng đầu của báo chí trong và ngoài nước ngay hôm sau, về một thử nghiệm thành công tại một tập đoàn tài chính. 47 ngân hàng, tương đương với một phần ba số ngân hàng ở Nhật Bản, đã tham gia sự kiện này. Một tập đoàn tài chính, vốn kiêm hoạt động chủ yếu trong lĩnh vực tiền tệ hối đoái cả trong và ngoài nước, đã sử dụng thành công công nghệ phức tạp blockchain để tạo ra nền tảng thanh toán RC Cloud. Nền tảng này ứng dụng vào công nghệ đám mây (cloud), một hệ thống thanh toán thế hệ mới, lần đầu được tạo ra bởi một đối tác liên doanh của Tập đoàn SBI chúng tôi – Công ty Ripple của Mỹ. Với nền tảng mới này, việc chuyển tiền sẽ gần như được thực hiện ngay lập tức, với mức phí chỉ bằng một phần mười so với trước đây.
+
+Các công ty tài chính cần nhận thức được rằng, xét về độ ảnh hưởng, cuộc cách mạng FinTech lần này có sức lan tỏa gấp nhiều lần so với cuộc cách mạng Internet trước đó. Bởi các khách hàng của chúng ta chắc chắn sẽ không bận tâm đến việc phải trung thành với những công ty tài chính truyền thống, họ sẽ nhanh chóng nắm bắt những cơ hội mới để thu được nhiều lợi ích cho bản thân. Nếu các công ty tài chính không thay đổi kịp thời thì khách hàng sẽ bỏ đi, trật tự hiện tại sẽ bị phá vỡ chỉ trong thời gian ngắn. Và đây sẽ là cuộc cách mạng diễn ra đồng thời trên phạm vi toàn thế giới.
+
+Tác giả và 17 doanh nhân cùng viết cuốn sách này vẫn đang nỗ lực khám phá, tìm hiểu với niềm tin mang lại những kết quả giúp ích cho xã hội thông qua việc hiện thực hóa cuộc cách mạng đó.
+
+Kitao Yoshitaka sinh ra tại tỉnh Hyogo, Nhật Bản. Năm 1974, ông tốt nghiệp khoa Kinh tế tại Đại học danh tiếng Keio. Cùng năm đó, ông gia nhập công ty chứng khoán Nomura. Năm 1978, Kitao Yoshitaka tốt nghiệp khoa Kinh tế trường đại học Cambrige, Anh Quốc. Năm 1989, ông trở thành Giám đốc điều hành công ty Wasserstein Perella International (London). Năm 1991, ông đảm nhiệm vị trí Giám đốc Công nghệ thông tin công ty Nomura. Năm 1992, ông trở thành Trưởng phòng kinh doanh công ty chứng khoán Nomura. Năm 1995, Kitao Yoshitaka quyết định gia nhập công ty sau khi nhận được lời mời của ngài Masayoshi Son - CEO Softbank. Hiện tại, Kitao Yoshitaka là Chủ tịch kiêm Giám đốc điều hành của SBI Holdings, Inc. Ngoài ra, ông cũng là Người đứng đầu Quỹ hỗ trợ trẻ em SBI và Hiệu trưởng trường Cao học SBI.

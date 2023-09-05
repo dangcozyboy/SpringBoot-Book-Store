@@ -1,0 +1,8 @@
+com\DakiBookStore\service\impl\BlogServiceImpl.class
+com\DakiBookStore\repository\BlogRepository.class
+com\DakiBookStore\config\AppConfig.class
+com\DakiBookStore\config\DataSourceConfig.class
+com\DakiBookStore\model\Blog.class
+com\DakiBookStore\config\JPAConfig.class
+com\DakiBookStore\controller\RestfulAPI.class
+com\DakiBookStore\service\BlogService.class
